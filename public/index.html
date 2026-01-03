@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge's Shady Degenerates Leagues</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3a5f 0%, #2c5f8d 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .tagline {
+            font-size: 1.2em;
+            font-style: italic;
+            color: #a8d5ff;
+        }
+        .container {
+            flex: 1;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        .welcome-section {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 30px;
+        }
+        .welcome-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .welcome-section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .card h3 {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+        .card p {
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #4a90e2;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #357abd;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🏈 JORGE'S SHADY DEGENERATES LEAGUES 🏈</h1>
+        <p class="tagline">Where Bad Beats and Trash Talk Live Forever</p>
+    </header>
+
+    <div class="container">
+        <div class="welcome-section">
+            <h2>Welcome to the Thunderdome</h2>
+            <p>This is the official hub for Jorge's fantasy football leagues. Here you'll find everything you need: live standings, historical records, fee tracking, and enough trash talk to fill a stadium.</p>
+            <p><strong>Multiple Yahoo leagues. One legendary commissioner. Zero mercy.</strong></p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-icon">🏆</div>
+                <h3>LEAGUES</h3>
+                <p>View current standings, rosters, and links to your Yahoo leagues</p>
+                <a href="#" class="btn">View Leagues</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">📊</div>
+                <h3>HISTORY</h3>
+                <p>All-time records, championships, and legendary performances</p>
+                <a href="#" class="btn">View Records</a>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💰</div>
+                <h3>FEES</h3>
+                <p>Entry fees, payouts, side bets, and who still owes Jorge money</p>
+                <a href="#" class="btn">View Finances</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Jorge's Leagues | Powered by Yahoo Fantasy Sports | Built with ❤️ and 🍺</p>
+    </footer>
+</body>
+</html>
