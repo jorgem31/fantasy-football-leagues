@@ -24,6 +24,7 @@ exports.handler = async (event, context) => {
       },
           body: `grant_type=authorization_code&redirect_uri=${encodeURIComponent(redirectUri)}&code=${code}`
                 },
+                                          });
         
     
     const tokenData = await tokenResponse.json();
