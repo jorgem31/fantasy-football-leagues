@@ -23,7 +23,6 @@ exports.handler = async (event, context) => {
               'Authorization': 'Basic ' + Buffer.from(clientId + ':' + clientSecret).toString('base64')
       },
           body: `grant_type=authorization_code&redirect_uri=${encodeURIComponent(redirectUri)}&code=${code}`
-                },
                                           });
         
     
