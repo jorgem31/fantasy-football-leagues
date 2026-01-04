@@ -20,8 +20,11 @@ exports.handler = async (event, context) => {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
+              'Authorization': 'Basic ' + Buffer.from(clientId + ':' + clientSecret).toString('base64')
       },
-      body: `client_id=${clientId}&client_secret=${clientSecret}&grant_type=authorization_code&redirect_uri=${encodeURIComponent(redirectUri)}&code=${code}`    });
+          body: `grant_type=authorization_code&redirect_uri=${encodeURIComponent(redirectUri)}&code=${code}`
+                },
+        
     
     const tokenData = await tokenResponse.json();
     
